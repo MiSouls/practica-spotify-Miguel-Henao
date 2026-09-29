@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.info_cancion img {
+    border-radius: 4px;
+}
+
 .controles_centro {
     display: flex;
     flex-direction: column;
@@ -44,4 +48,46 @@ font-size: 12px;
 .barra_progreso {
     width: 100%;
     max-width: 500px;
+}
+
+.botones_reproduccion {
+    display: flex;
+    gap: 20px;
+}
+
+.controles_derecha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor_progreso {
+    display: flex;
+    color: #b3b3b3;
+    font-size: 11px;
+    gap: 10px;
+}
+
+.textos_cancion:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.botones_reproduccion span:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+input {
+    accent-color: #1db954;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .controles_derecha {
+        display: none;
+    }
 }
